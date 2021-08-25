@@ -11,4 +11,8 @@ echo "<-----Duplicate Lines-------->"
 cat $DP | sort | uniq -d 
 echo "<------No of Duplicate lines---->"
 cat $DP | sort | uniq -d | wc -l
-
+cat $DP | sort | uniq  > duplicatelinesRM.txt
+echo "<------- Duplicate lines Removed---->"
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+cat duplicatelinesRM.txt
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
